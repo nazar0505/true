@@ -1,0 +1,21 @@
+class contactTelegram():
+    userName = "nazar"
+    phone = "8800 555 3535"
+class contactViber():
+    name = "Artem"
+    phone = "8561 556 6511"
+class contactList(contactTelegram,contactViber):
+    name = "Olav"
+    phone = "4985 984 9846"
+    category ="frend"
+    def __init__(self,n,p,c):
+        self.name = n
+        self.phone = p
+        self.category = c
+        self.userName = contactTelegram.userName
+
+    def __init__(self, c):
+        self.name = contactViber.name
+        self.phone = contactViber.phone
+        self.category = c
+        self.userName = contactTelegram.userName
